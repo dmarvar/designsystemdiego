@@ -5,6 +5,10 @@ export const config: Config = {
   namespace: 'designsystemdiego',
 
   outputTargets: [
+    reactOutputTarget({
+      componentCorePackage: 'designsystemdiego',
+      proxiesFile: '../designsystemdiego-react/src/components.ts',
+    }),
     {
       type: 'dist',
       esmLoaderPath: '../loader',
